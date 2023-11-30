@@ -1,0 +1,3 @@
+export const GETLOADING='GETLOADING'
+export const GETSUCCESS='GETSUCCESS'
+export const GETERROR='GETERROR'
