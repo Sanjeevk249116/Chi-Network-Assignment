@@ -1,9 +1,9 @@
 import React, {  useState } from 'react'
 import '../styles/signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 export const Signup = () => {
-
+const Navigate=useNavigate()
  const arr=JSON.parse(localStorage.getItem("user"))||[]
     const[log,setLog]=useState({
       name:"",
@@ -25,6 +25,7 @@ export const Signup = () => {
         localStorage.setItem("user",JSON.stringify(arr))
 
         swal("Registration Successfully")
+        Navigate("/login")
      
      }
     }

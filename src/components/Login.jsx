@@ -65,7 +65,7 @@ e.preventDefault();
           
         </div>
       </div>
-      <div class="input_box button">
+      <div class="input_box button" style={{width:'100%'}}>
         <input type="submit" value="Login"id="login"/>
       </div>
       <div class="sign_up">

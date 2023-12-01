@@ -73,7 +73,7 @@
   }
   .input_box input{
     height: 100%;
-    width: 100%;
+    width: 95%;
     outline: none;
     border: 1px solid lightgrey;
     border-radius: 5px;

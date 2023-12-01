@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getData } from "../redux/action";
 import Pagination from "./Pagination";
+import swal from "sweetalert";
 
 function MoviesData() {
   const { array,  setObj ,login,page,setCurrentPage,searchMovie} = useContext(AuthContain);
@@ -15,13 +16,13 @@ const dispatch=useDispatch()
   const Navigate=useNavigate()
   const handleMoviesDetails = (el) => {
     setObj(el);
-    // if(login=="Login/SignUp"){
-    //     alert("login first")
-    //     Navigate("/login")
-    // }else{
-    //     Navigate('/details')
-    // }
-    Navigate('/details')
+    if(login=="Login/SignUp"){
+       swal("Please Login first")
+        Navigate("/login")
+    }else{
+        Navigate('/details')
+    }
+    // Navigate('/details')
   };
 
 

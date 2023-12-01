@@ -100,3 +100,69 @@
   font-weight: 700;
   border-radius: 5px;
 }
+
+.logout{
+  margin-left: 20px;
+  height: 30px;
+  padding: 6px 15px;
+  margin-top: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+@media screen and ((min-width:710px) and (max-width:1080px)) {
+  .main2{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and ((min-width:300px) and (max-width:710px)) {
+  .main2{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media screen and (max-width:831px){
+  .sort-type{
+    display: none;
+  }
+}
+@media screen and (max-width:660px){
+ .btn{
+  display: none;
+ }
+}
+@media screen and (max-width:410px){
+ .name{
+  display: none;
+ } 
+  .logout{
+  margin-top: 0px;
+ }
+}
+@media screen and (min-width:410px){
+ .name2{
+  display: none;
+ } 
+  
+}
+
+@media screen and ((min-width:500px) and (max-width:550px)){
+  .filter-options input,.filter-options select {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .filter-options{
+    display: block;
+  }
+  .main11{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .filter-options select{
+    padding-right: 29px;
+  }
+ }
