@@ -23,7 +23,7 @@ function Favorite() {
         <></>
       )}
       {arr?.map((el) => (
-        <div>
+        <div className="mainfev">
           <div className="main2 fav">
             <div>
               <img src={el?.Poster} alt={el?.Title} />
