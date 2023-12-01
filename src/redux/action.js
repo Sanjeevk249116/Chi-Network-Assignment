@@ -1,24 +1,24 @@
 import { GETERROR, GETLOADING, GETSUCCESS } from "./actionType";
 import axios from "axios";
 
+const getAPI = (api, year,type,page) => {
+  
+  if (year) {
+    return (api = `${api}&y=${year}`);
+  } else if (type) {
+    return (api = `${api}&type=${type}`);
+  } else if (page) {
+    return (api = `${api}&page=${page}`);
+  }
+  return api;
+};
 export const getData = (movies, year, type, page) => async (dispatch) => {
-  const getAPI = (api, yr) => {
-    console.log(yr);
-    if (yr) {
-      return (api = `${api}&y=${year}`);
-    } else if (type) {
-      return (api = `${api}&type=${type}`);
-    } else if (page) {
-      return (api = `${api}&page=${page}`);
-    }
-    return api;
-  };
 
   try {
     dispatch({ type: GETLOADING });
 
     const url = getAPI(
-      `https:www.omdbapi.com/?s=${movies}&apikey=646c9327`,
+      `https://www.omdbapi.com/?s=${movies}&apikey=646c9327`,
       year,
       type,
       page

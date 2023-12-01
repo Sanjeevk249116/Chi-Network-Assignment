@@ -17,7 +17,7 @@ function Movies() {
   const data1 = useSelector((pre) => pre.reducer.moviesData);
 
   setArray(data1.Search);
-
+console.log(data1)
   setPage(data1.Search?.length);
   console.log(data.Loading);
   const handleShow = (e, dt, ty) => {
