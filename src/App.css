@@ -1,5 +1,102 @@
-.App {
-  text-align: center;
+
+
+.filter-options {
+	box-shadow: 0 4px 15px lightgray;
+	padding: 13px;
+	border-radius: 8px;
+	
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	margin: auto;
 }
 
+.filter-options select,
+.filter-options input {
+	box-shadow: 0 4px 15px lightgray;
+	padding: 13px;
+	border-radius: 8px;
+	margin: 0 1rem 0 1 rem;
+}
+.navMain{
+  box-shadow: 0 4px 15px lightgray;
+	padding: 7px;
+	border-radius: 8px;
+	
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
 
+.btn{
+  padding: 12px 10px;
+  border-radius: 8px;
+  margin-left: 1px;
+}
+
+.main2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top:2%;
+  
+}
+
+.main22{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99%;
+}
+.main1{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.main1>div{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn2{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: red;
+}
+
+.btn3{
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  color: rgb(206, 103, 103);
+}
+
+.fav{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.page-item{
+  padding: 3px 5px;
+}
+
+.page-link{
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 5px;
+}

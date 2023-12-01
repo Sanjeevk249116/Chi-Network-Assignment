@@ -1,10 +1,12 @@
-import React, {  useState } from 'react'
+import React, {  useContext, useState } from 'react'
 import '../styles/login.css';
+import swal from 'sweetalert';
 import { Link,  useNavigate } from 'react-router-dom';
+import { AuthContain } from '../AuthContent/AuthContentProvider';
 
 
 export const Login = () => {
-
+const{setLogin}=useContext(AuthContain)
   const arr=JSON.parse(localStorage.getItem("user"))
 const[dt,setDt]=useState({
   email:"",
@@ -14,23 +16,23 @@ const[dt,setDt]=useState({
 const Navigate=useNavigate()
 const logindata=(e)=>{
 e.preventDefault();
-    let data1=arr.filter((el)=>{
+    let data1=arr?.filter((el)=>{
       return el.email===dt.email&&el.password===dt.password;
     })
 
-    if(data1.length>=1){
-      alert("login Successfully");
+    if(data1?.length>=1){
+      swal("login Successfully");
       let data2=arr.filter((el)=>{
        if(el.email===dt.email&&el.password===dt.password){
         return el.name;
        }
       })
-      localStorage.setItem("name",data2[0].name);
+     setLogin(data2[0].name)
      Navigate("/")
 
     }
     else{
-      alert("Please SignUp First or Fill correct Details");
+      swal("Please SignUp First or Fill correct Details");
     }
 }
 

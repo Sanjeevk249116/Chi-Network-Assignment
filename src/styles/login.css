@@ -1,13 +1,13 @@
 .body{
     display: grid;
-    height: 97vh;
+    height: 87vh;
     place-items:center;
     /* background: #ffd814; */
     background-image: url(https://img.freepik.com/free-vector/living-room-interior-with-large-panoramic-windows_107791-11853.jpg?w=1060&t=st=1692167948~exp=1692168548~hmac=860b2092e36e02598a83d71812c05720782ce41e8064d64f71a67d1254059f35);
     font-family: 'Poppins',sans-serif;
     z-index: -0.6;
     opacity: 1;
-    height: 97hv;
+    
 
   /* Center and scale the image nicely */
   background-position: center;

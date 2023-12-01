@@ -1,7 +1,7 @@
 import React, {  useState } from 'react'
 import '../styles/signup.css';
 import { Link } from 'react-router-dom';
-
+import swal from 'sweetalert';
 export const Signup = () => {
 
  const arr=JSON.parse(localStorage.getItem("user"))||[]
@@ -19,12 +19,12 @@ export const Signup = () => {
        return el.email===log.email||el.phone===log.phone
      })
      if(logData.length>=1){
-        alert("All ready register")
+        swal("All ready register")
      }else{
         arr.push(log);
         localStorage.setItem("user",JSON.stringify(arr))
 
-        alert("Successfully")
+        swal("Registration Successfully")
      
      }
     }
