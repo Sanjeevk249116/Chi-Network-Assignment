@@ -51,18 +51,18 @@ function Movies() {
       </h1>
       <div className="main11">
         <div className="filter-options">
-          <form style={{marginTop:'0px'}}>
-          <label>
-            <input
-              type="text"
-              value={searchMovie}
-              onChange={(e) => setSearchMovie(e.target.value)}
-              placeholder="Search for movies..."
-            />
-            <button className="btn" onClick={(e) => handleShow(e)}>
-              Search
-            </button>
-          </label>
+          <form style={{ marginTop: "0px" }}>
+            <label>
+              <input
+                type="text"
+                value={searchMovie}
+                onChange={(e) => setSearchMovie(e.target.value)}
+                placeholder="Search for movies..."
+              />
+              <button className="btn" onClick={(e) => handleShow(e)}>
+                Search
+              </button>
+            </label>
           </form>
 
           <div>
@@ -106,7 +106,7 @@ function Movies() {
             </select>
           </div>
           <label>
-           <span className="sort-type"> Sort by Type:</span>
+            <span className="sort-type"> Sort by Type:</span>
             <select
               className="sort-by-type"
               onChange={(e) => handleChangeType(e)}
